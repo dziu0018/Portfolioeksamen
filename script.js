@@ -15,8 +15,8 @@ function toggleMenu(){
 
 
     if (erSkjult == true){
-        document.querySelector("#menuknap").textContent = "☰";
+        document.querySelector("#menuknap").textContent = "burgermenu1.png";
     } else {
-        document.querySelector("#menuknap").textContent = "X";
+        document.querySelector("#menuknap").textContent = "╳";
     }
 }
