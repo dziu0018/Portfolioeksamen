@@ -1,22 +1,17 @@
-window.addEventListener("load", sidenVises);
+const mainMenu = document.querySelector('.mainMenu');
+const closeMenu = document.querySelector('.closeMenu');
+const openMenu = document.querySelector('.openMenu');
 
-function sidenVises(){
-    console.log("sidenVises")
 
-    document.querySelector("#menuknap").addEventListener("click", toggleMenu);
+
+
+openMenu.addEventListener('click',show);
+closeMenu.addEventListener('click',close);
+
+function show(){
+    mainMenu.style.display = 'flex';
+    mainMenu.style.top = '0';
 }
-
-function toggleMenu(){
-    console.log("toggleMenu")
-
-    document.querySelector("#menu").classList.toggle("hidden");
-
-    let erSkjult = document.querySelector("#menu").classList.contains("hidden");
-
-
-    if (erSkjult == true){
-        document.querySelector("#menuknap").textContent = "burgermenu1.png";
-    } else {
-        document.querySelector("#menuknap").textContent = "╳";
-    }
+function close(){
+    mainMenu.style.top = '-100%';
 }

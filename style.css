@@ -1,110 +1,84 @@
-body {
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+
+}
+body  {
     background: #131333;
 }
-
-.hidden {
-    opacity: 0;
-    transform: translateX(-100%);
+nav {
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
 }
-
-#menu {
-    list-style-type: none;
-    transition: transform 0.3s;
-    transform-origin: top left;
-    width: 100%;
-}
-
-
-ul {
+nav .mainMenu {
+    display: flex;
     list-style: none;
 }
-
-li {
+nav .mainMenu li a {
     display: inline-block;
-    padding: 0 15px;
-}
-
-li a {
-    color: #fff;
-    text-transform: uppercase;
-}
-
-li a:hover {
-    color: #AA5477;
-}
-
-
-nav ul li a {
-    color: #f2f2f2;
+    padding: 30px;
     text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.5rem;
+    color: #f2f2f2;
     font-family: 'Old Standard TT', serif;
-    font-size: 30px;
 }
-
+nav .mainMenu li a:hover {
+    background: rgb(255,94,0);
+}
+nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+nav .mainMenu .closeMenu , .icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
 .logo img {
-    position: absolute;
     width: 50px;
     margin-top: 15px;
     margin-left: 15px;
 }
 
-.dziugas img{
-    width: 400px;
-    float: right;
-    padding-top: 63px;
-    padding-right: 100px;
-}
-
-
-
-
-/*COMPUTER*/
-
-@media (min-width:600px) {
-
-    #menuknap {
+@media(max-width: 800px){
+    nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        transition: top 1s ease;
         display: none;
     }
-
-    #menu.hidden {
-        transform: translateX(0);
-        opacity: 1;
-    }
-
-header {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 10px 70px;
-}
-    /*#menu li {
-        display: inline-block;
-
-    }
-
-    #navtext {
-        text-align: center;
-    }*/
-}
-
-/*MOBIL*/
-@media (max-width:600px) {
-    .logo img {
-        display: none;
-    }
-    nav ul li a {
-    font-size: 20px;
-}
-    li {
-    display: flex;
-    padding: 0 15px;
-}
-
-    #menuknap img{
+    nav .mainMenu .closeMenu {
+        display: block;
         position: absolute;
-        width: 30px;
+        top: 20px;
+        right: 20px;
 
+    }
+    nav .openMenu {
+        display: block;
+    }
+    nav .mainMenu li a:hover {
+        background: none;
+        color: rgb(255, 123, 0);
+        font-size: 1.6rem;
+    }
+    .icons i {
+        display: inline-block;
+        padding: 12px;
     }
 }
