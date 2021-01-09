@@ -1,30 +1,115 @@
-
-.section_wrapper{
-    max-width: 1200px;
+.section_wrapper {
+    max-width: 1400px;
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px 60px;
+    padding-bottom: 3rem;
 }
-.section_wrapper img{
+
+.section_wrapper img {
     display: block;
     width: 100%;
     object-fit: cover;
-    box-shadow: 1px 1px 10px black;
+    box-shadow: 0px 0px 10px black;
 }
 
-h1{
+.billede1:hover,
+.billede2:hover,
+.billede3:hover,
+.billede4:hover,
+.billede5:hover,
+.billede6:hover,
+.billede7:hover,
+.billede8:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+h1 {
     font-family: 'Rubik', sans-serif;
     font-weight: 100;
     color: white;
     padding-bottom: 0.5rem;
     font-size: 2rem
 }
-h2{
+
+h2 {
     font-family: 'Rubik', sans-serif;
     font-weight: 100;
     color: white;
-    padding-top: 0.5rem;
-    font-size: 1.5rem
+    padding-top: 1rem;
+    font-size: 1.2rem
 }
 
+footer {
+    clear: both;
+    position: relative;
+    text-align: center;
+    bottom: 0;
+}
+
+h3 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 100;
+    color: white;
+    padding-top: 1rem;
+    font-size: 0.8rem
+}
+
+h4 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 100;
+    color: white;
+    padding-bottom: 0.5rem;
+    font-size: 3rem;
+    text-align: center;
+}
+
+h5 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 100;
+    color: white;
+    padding-bottom: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+@media(max-width: 700px) {
+
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    h4{
+        padding-top: 0.8rem;
+    }
+
+    h5 {
+        font-size: 1rem;
+
+    }
+
+    .section_wrapper {
+        margin-left: 20px;
+        margin-right: 20px;
+        grid-template-columns: 1fr;
+    }
+
+    .billede1:hover,
+    .billede2:hover,
+    .billede3:hover,
+    .billede4:hover,
+    .billede5:hover,
+    .billede6:hover,
+    .billede7:hover,
+    .billede8:hover {
+        transform: none;
+    }
+
+
+}
