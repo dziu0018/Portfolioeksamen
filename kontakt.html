@@ -8,69 +8,59 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="kontakt.css">
     <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
 <body>
-    <div class="logo">
-        <a href="index.html"> <img src="1x/Artboard%201.png" alt=""></a>
-    </div>
     <header>
-        <button class="ham"></button>
         <nav class="navbar">
-            <ul id="menu" class="">
-                <div id="navtext">
-                    <li><a href="portfolio.html">PORTFOLIO</a></li>
-                    <li><a href="om_mig.html">OM MIG</a></li>
-                    <li><a href="kontakt.html">KONTAKT</a></li>
+            <div class="logo">
+                <a href="index.html"> <img src="1x/Artboard%201.png" alt=""></a>
+            </div>
+            <div class="openMenu">
+                <i class="fa fa-bars"></i>
+            </div>
+            <ul class="mainMenu">
+                <li><a href="portfolio.html">PORTFOLIO</a></li>
+                <li><a href="om_mig.html">OM MIG</a></li>
+                <li><a href="kontakt.html">KONTAKT</a></li>
+                <div class="closeMenu"><i class="fa fa-times"></i>
                 </div>
             </ul>
 
         </nav>
     </header>
-
-     <main>
+<main>
     <section>
       <h1>Kontakt</h1>
     </section>
 
     <section class="form-section">
       <article>
-        <h2>Skriv til os</h2>
-        <p>Udfyld kontaktformularen for at kontakte os. Vi glæder os til at høre fra jer.</p>
+        <h2>Skriv til mig</h2>
+        <p>Udfyld kontaktformularen for at kontakte mig. Jeg glæder mig til at høre fra jer.</p>
       </article>
-
-      <!-- Form HTML -->
+<!--FORM-->
       <form action="tak.html" name="kontakt" netlify>
         <div class="form-felt">
           <label>
             Fulde navn
-            <input placeholder="fx Peter Jensen" type="text" name="fnavn" required>
+            <input placeholder="fx Rasmus Rasmussen" type="text" name="fnavn" required>
           </label>
         </div>
 
         <div class="form-felt">
           <label>
             E-mail
-            <input placeholder="fx peter@gmail.com" name="email" type="email" required>
-          </label>
-        </div>
-
-        <div class="form-felt">
-          <label>
-            Profil
-            <select name="liste">
-              <option value="">Vælg profil</option>
-              <option value="studerende">Studerende</option>
-              <option value="underviser">Underviser</option>
-            </select>
+            <input placeholder="fx rasmus@gmail.com" name="email" type="email" required>
           </label>
         </div>
 
         <div class="form-felt">
           <label>
             Besked (valgfri)
-            <textarea name="besked" rows="5" cols="23"></textarea>
+            <textarea name="besked" rows="5" cols="31"></textarea>
           </label>
         </div>
 
@@ -79,10 +69,6 @@
 
     </section>
   </main>
-
-    <div class="dziugas">
-        <img src="dziugas.png" alt="mand">
-    </div>
 
 
 
@@ -95,3 +81,4 @@
 </body>
 
 </html>
+

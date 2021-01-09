@@ -1,0 +1,30 @@
+
+.section_wrapper{
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px 60px;
+}
+.section_wrapper img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 1px 1px 10px black;
+}
+
+h1{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 100;
+    color: white;
+    padding-bottom: 0.5rem;
+    font-size: 2rem
+}
+h2{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 100;
+    color: white;
+    padding-top: 0.5rem;
+    font-size: 1.5rem
+}
+
