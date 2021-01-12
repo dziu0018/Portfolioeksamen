@@ -26,10 +26,12 @@ h1 {
 }
 
 h2 {
-     font-family: 'Rubik', sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-weight: 100;
     margin-bottom: .5rem;
+    text-shadow: none;
 }
+
 
 h3 {
      font-family: 'Rubik', sans-serif;
@@ -75,6 +77,7 @@ section {
     background: #9b305c;
     color: #fff;
     border-radius: 8px;
+    box-shadow: 0px 0px 5px black;
 }
 
 article {
