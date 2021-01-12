@@ -1,3 +1,9 @@
+body {
+    background: url(billeder/baggrundfade.png);
+    background-color: #131333;
+    background-repeat: no-repeat;
+}
+
 .billede1 {
     max-width: 1200px;
     margin: auto;
@@ -16,9 +22,14 @@ h1 {
     font-family: 'Rubik', sans-serif;
     font-weight: 100;
     color: white;
+    padding-top: 1rem;
     padding-bottom: 0.5rem;
     font-size: 2rem;
     text-align: center;
+}
+.billede1 a img:hover{
+    transform: scale(1.01);
+    transition: 0.3s;
 }
 
 h2 {
@@ -37,6 +48,14 @@ h3 {
     padding-bottom: 1rem;
     font-size: 1rem;
 
+}
+h4{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 100;
+    color: #e26c9d;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+    text-align: center;
 }
 h10 {
     font-family: 'Rubik', sans-serif;
@@ -60,6 +79,15 @@ footer {
     height: 2.5rem;
 }
 
+h1,h2,h3,h4{
+    text-shadow: 2px 2px black;
+}
+
+.orginale img{
+    margin-top: 20px;
+    width: 100%;
+}
+
 @media(max-width: 700px) {
 
 
@@ -74,4 +102,7 @@ footer {
         grid-gap: 20px 20px;
 
     }
+    body {
+    background: url(billeder/baggrundfademobil.png);
+        }
 }

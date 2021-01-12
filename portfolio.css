@@ -1,3 +1,9 @@
+body {
+    background: url(billeder/baggrundfade.png);
+    background-color: #131333;
+    background-repeat: no-repeat;
+}
+
 .section_wrapper {
     max-width: 1400px;
     margin: auto;
@@ -22,7 +28,7 @@
 .billede6:hover,
 .billede7:hover,
 .billede8:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
     transition: 0.3s;
 }
 

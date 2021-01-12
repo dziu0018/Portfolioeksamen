@@ -119,6 +119,13 @@ h3{
     padding-top: 1rem;
     font-size: 0.8rem
 }
+h10 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 100;
+    color: white;
+    padding-top: 1rem;
+    font-size: 0.8rem
+}
 
 @media (max-width:600px) {
 

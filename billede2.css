@@ -1,3 +1,9 @@
+body {
+    background: url(billeder/baggrundfade.png);
+    background-color: #131333;
+    background-repeat: no-repeat;
+}
+
 .billede1 {
     max-width: 1200px;
     margin: auto;
@@ -38,6 +44,14 @@ h3 {
     font-size: 1rem;
 
 }
+h4{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 100;
+    color: #e26c9d;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+    text-align: center;
+}
 h10 {
     font-family: 'Rubik', sans-serif;
     font-weight: 100;
@@ -60,6 +74,15 @@ footer {
     height: 2.5rem;
 }
 
+.billede1 a img:hover{
+    transform: scale(1.01);
+    transition: 0.3s;
+}
+
+h1,h2,h3,h4{
+    text-shadow: 2px 2px black;
+}
+
 @media(max-width: 700px) {
 
 
@@ -74,4 +97,8 @@ footer {
         grid-gap: 20px 20px;
 
     }
+
+    body {
+    background: url(billeder/baggrundfademobil.png);
+        }
 }
