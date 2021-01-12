@@ -76,6 +76,21 @@ h3{
     font-size: 0.8rem
 }
 
+.maintext{
+position: relative;
+    top: 250px;
+    right: 250px;
+}
+h1 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 100;
+    color: white;
+    padding-bottom: 0.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+    bottom: 50px;
+}
+
 @media(max-width: 700px) {
 
     nav .mainMenu {
@@ -115,4 +130,13 @@ h3{
         display: inline-block;
         padding: 12px;
     }
+
+    .maintext{
+        padding-left: 30px;
+         padding-right: 30px;
+
+    position: relative;
+    top: 220px;
+    right: 0px;;
+}
 }

@@ -5,10 +5,38 @@ footer {
     bottom: 0;
 }
 
-h3{
+h3 {
     font-family: 'Rubik', sans-serif;
     font-weight: 100;
     color: white;
     padding-top: 1rem;
     font-size: 0.8rem
+}
+
+div.om_mig {
+    max-width: 1000px;
+    margin: auto;
+}
+
+div.om_mig h2 {
+    margin-top: 100px;
+}
+
+h1 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 100;
+    color: white;
+    font-size: 3rem
+}
+
+h2 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 100;
+    color: white;
+    font-size: 1.5rem
+}
+
+.om_mig {
+    padding-left: 30px;
+    padding-right: 30px;
 }

@@ -16,17 +16,24 @@ body {
 }
 
 h1 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 100;
     color: #ffffff;
-    font-size: 2.5rem;
+    font-size: 3rem;
     line-height: 1.25;
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 h2 {
+     font-family: 'Rubik', sans-serif;
+    font-weight: 100;
     margin-bottom: .5rem;
 }
 
-h3{
+h3 {
+     font-family: 'Rubik', sans-serif;
+    font-weight: 100;
     color: #ffffff;
     font-size: 2.5rem;
     margin-bottom: 1rem;
@@ -35,10 +42,12 @@ h3{
 
 .tilbage {
     display: flex;
-  justify-content: center;
+    justify-content: center;
 }
 
 .tilbage a {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 100;
     color: #ffffff;
     font-size: 2.5rem;
     margin-bottom: 1rem;
@@ -105,6 +114,7 @@ button {
     font-size: 1rem;
     cursor: pointer;
 }
+
 footer {
     clear: both;
     position: absolute;
@@ -112,13 +122,14 @@ footer {
     bottom: 0;
 }
 
-h3{
+h3 {
     font-family: 'Rubik', sans-serif;
     font-weight: 100;
     color: white;
     padding-top: 1rem;
     font-size: 0.8rem
 }
+
 h10 {
     font-family: 'Rubik', sans-serif;
     font-weight: 100;
@@ -127,11 +138,19 @@ h10 {
     font-size: 0.8rem
 }
 
+.opacity {
+    animation-name: opacity_kf;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
 @media (max-width:600px) {
 
-    body{
+    body {
         display: block;
     }
+
     .form-section {
         grid-template-columns: 1fr;
         flex-direction: column;
@@ -140,7 +159,7 @@ h10 {
     article {
         border-right: 0px;
 
-}
+    }
 
 
 

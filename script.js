@@ -1,9 +1,9 @@
 window.addEventListener("load", sidenVises);
 
 function sidenVises(){
-const mainMenu = document.querySelector('.mainMenu');
-const closeMenu = document.querySelector('.closeMenu');
-const openMenu = document.querySelector('.openMenu');
+let mainMenu = document.querySelector('.mainMenu');
+let closeMenu = document.querySelector('.closeMenu');
+let openMenu = document.querySelector('.openMenu');
 
 
 
